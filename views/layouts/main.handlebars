@@ -9,13 +9,13 @@
 
   <div class="wrapper">
     <header>
-      <h1 class="has-text-black px-3 py-3 has-text-weight-bold">The Dev Tech Blog</h1>
-      <nav class="navbar mt-2">
+      <h1 class="has-text-orange px-3 py-7 has-text-weight-bold"> The Dev Tech Blog </h1>
+      <nav class="navbar mt-5">
         {{#if loggedIn}}
         <a href="/" class="navbar-item is-hoverable pt-1">Homepage</a>
         <a href="/dashboard" class="navbar-item is-hoverable pt-1">Dashboard</a>
         <a href="/dashboard/create/" class="navbar-item is-hoverable pt-1 mr-4">Create Post</a>
-        <button id="logout" class="button is-danger">Logout</button>
+        <button id="logout" class="button is-light">Logout</button>
         {{else}}
         <a href="/" class="navbar-item is-hoverable pt-1">Homepage</a>
         <a href="/login" class="button is-dark">Login</a>
@@ -28,7 +28,9 @@
     </main>
 
 
-
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
 </body>
 
 </html>

@@ -1,22 +1,225 @@
- 
+* {
+    box-sizing: border-box;
+    
+}
+
+header {
+    border-radius: 20px;
+    border-color: #ff643d;
+    background-color: rgb(6, 6, 6);
+    /* filter: drop-shadow(7px 7px 5px rgb(252, 89, 2)); */
+    /* text-shadow: #2d2c2c 3px 1px 3px; */
+
+}
+
+h1 {
+    font-size: 30px;
+}
+h2{
+    color: #b0afaf !important;
+}
+.navbar {
+    background-color: rgb(6, 6, 6);;
+    border-color: #ff643d;
+    border-width: 1px;
+}
+
+.navbar :hover {
+    font-weight: bold;
+    color: #c0bebe !important;
+    
+    background-color: black;
+    
+}
+a.navbar-item.is-hoverable.pt-1 {
+    background-color: rgba(224, 5, 5, 0);
+    color:#727070
+}
+.navbar-item{
+    background-color: black;
+}
 
 
+body,
+html {
+    background-image: url("../images/techblogbg.jpg");
 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: rgb(250, 114, 3);
+}
 
+a {
 
+    font-weight: bold;
+    color: rgb(250, 90, 3);
+}
 
+a:hover {
+    color: #727272;
+}
 
+button {
+    border: 5px;
+    padding: 1%;
+    font-weight: bold;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 10px;
 
+}
 
+.post-list {
+    margin: 0;
+    padding: 0;
+}
 
+textarea,
+input {
+    padding: .5%;
+    border-radius: 5px;
+    border: 2px solid rgb(247, 72, 3);
+}
 
+.textarea:focus,
+input:focus {
+    outline: none;
+    border: 1px solid #f80303;
+}
+.textarea{
+    background-color:#b0afaf7b;
+    border-radius: 5px;
+    border: 2px solid rgb(247, 72, 3);
+    color:rgb(255, 255, 255)
+}
+textarea {
+    min-width: 40%;
+    min-height: 100px;
+    background-color: #c0bebe3d;
+    color:#ccc
+}
 
+form>div {
+    margin-bottom: 2%;
+}
 
+form label {
+    display: block;
+}
 
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
 
+header {
+    border-bottom: 4px solid rgb(254, 107, 3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    font-size: 25;
+}
 
+main {
+    flex: 1;
+    padding: 2% 4%;
+}
 
+.btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #060606;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-left: 16px;
+}
 
+.btn-no-style:hover {
+    background-color: black;
+    color: #3486eb;
+    
+}
 
- 
+.delete-post-btn {
+    background-color: #d41414;
+}
+
+.delete-post-btn:hover {
+    background-color: #ff643d;
+}
+
+.post {
+    margin-bottom: 2%;
+    line-height: 150%;
+}
+
+.post .title span {
+    font-style: italic;
+    font-size: 90%;
+    color: #c0bebe;
+}
+
+.edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+}
+
+.comment-form {
+    margin-bottom: 5%;
+}
+
+.comment {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+    background-color: #525252;
+}
+
+.comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+}
+
+.edit-post-form {
+    margin-bottom: 5%;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+}
+
+.card {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background-color: #52525253;
+    color:aliceblue;
+    border-color:#727070;
+    border-radius: 3px;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+}
