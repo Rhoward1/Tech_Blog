@@ -14,13 +14,28 @@
 - [Contact Information](#contact-information)  
   
 ## Project Description
-- This application allows various different users to create an account and post blog posts. Users can also edit and delete their own posts. It also allows them to comment on posts from other users.
+- This Tech Blog application requires a User to create a login to enable to ability to create, update and delete the users blog contents.
+- This app uses the following technoligies:
+- Heroku / JawsDB (Database)
+- MySQL
+- Javascript
+  - Node.js
+  - connect-session-sequelize
+  - express-session
+  - handlebars
+  - dotenv
+  - bcrypt
+  - express
+  - sequelize
+
+
   
 ## Installation Information
 - None
   
 ## Usage Information
 - Check out The Dev Tech Blog here in the live link.
+- https://the-devtech-blog.herokuapp.com/ 
 - ![](./public/images/techblog.png)
 
 ## Contributors on this Project
